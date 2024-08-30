@@ -76,3 +76,83 @@ height: 90px;
 .navbar_list a:hover{
     color: var(--primary);
 }
+
+main{
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   width: 100%;
+    color: white;
+}
+
+#hero{
+
+   max-width: 1200px;
+    margin-top: 65px;
+    padding: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-info{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   width: 50%;
+   gap: 20px;
+}
+
+.hero-info h1{
+    font-size: 90px;
+    font-weight: 800;
+    width: 80%;
+    min-width: 500px;
+}
+
+.hero-info a{
+    background-color: white;
+    color: black;
+    width: 120px;
+    padding: 8px 0;
+   
+    text-align: center;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.hero-card img{
+    width: 300px;
+
+}
+
+
+#aboutus{
+    background-color: black;
+   width: 2000px;
+   padding: 100px 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+}
+
+
+
+footer{
+    background-color: var(--primary);
+    color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 0;
+}
+
+footer a{
+    color: white;
+    font-size: 14px;
+}
