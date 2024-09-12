@@ -127,7 +127,38 @@ main{
     width: 300px;
 
 }
+#cards{
+    max-width: 1200px;
+    margin-top: 65px;
+    padding: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
+.cards-container img{
+width: 100px;
+}
+
+.card {
+    background-color: var(--header-background);
+    width: 300px;
+    height: 400px;
+    padding: 40px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
 
 #aboutus{
     background-color: black;
@@ -138,9 +169,58 @@ main{
    align-items: center;
   
 }
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
 
+    to{
+        opacity: 1;
+    }
+}
 
+@keyframes slide-up{
+    from{
+        transform: translateY(100px);
+    }
 
+    to{
+        transform: 0;
+    }
+}
+
+@keyframes slide-right{
+    from{
+        transform: translateX(100px);
+    }
+
+    to{
+        transform: 0;
+    }
+}
+
+#cards h2,
+.parrafo-principal{
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards, slide-up 1.3s ease-in-out;
+    animation-delay: 0.4s; 
+}
+
+.cards-container .card{
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards, slide-up 1.3s ease-in-out;
+}
+
+.card:nth-child(1){
+    animation-delay: 0.8s;
+}
+
+.card:nth-child(2){
+    animation-delay: 0.6s;
+}
+.card:nth-child(3){
+    animation-delay: 1s;
+}
 footer{
     background-color: var(--primary);
     color: pink;
@@ -155,4 +235,16 @@ footer{
 footer a{
     color: white;
     font-size: 14px;
+} 
+
+footer img{
+    width: 50px;
+    align-items: center;
+}
+
+.social-icons-contaier{
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+    font-size: 30px;
 }
