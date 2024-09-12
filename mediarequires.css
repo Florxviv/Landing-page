@@ -2,6 +2,12 @@
     .navbar{
         gap: 10px;
     }
+    .cart-icon{
+        height: 33px;
+        margin-right: 0rem;
+        margin: 4px;
+    }
+
     .navbar-list{
         display: none;
         position: absolute;
@@ -19,8 +25,34 @@
         gap: 25px;
         z-index: 2;
     }
+
     .navbar-list a{
         font-size: 18px;
+    }
+
+   
+    
+
+    
+    .hero-info{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+   
+
+    .hero-info h1{
+        width: 90%;
+        max-width: 500px;
+        min-width: unset;
+    }
+
+    .hero-info p{
+        width: 60%;
+        max-width: 600px;
     }
 
     #info h2{
@@ -48,12 +80,12 @@
 }
 
 @media (max-width:576px) {
-    .portada-info h1{
+    .hero-info h1{
         width: 95%;
         min-width: unset;
     }
 
-    .portada-info p {
+    .hero-info p {
         width: 60%;
         min-width: unset;
     }
@@ -77,18 +109,6 @@
         width: 100%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
